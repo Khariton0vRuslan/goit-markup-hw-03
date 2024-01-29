@@ -130,6 +130,7 @@ img{
     letter-spacing: -0.02em;
     display: flex;
     gap: 40px;
+    padding: 24px 0 
 }
 .address-link{
     letter-spacing: 0.02em;
@@ -247,9 +248,6 @@ img{
 
 }
 .out-team-container{
-    height: 732px;
-    width: 1440px;
-    flex-shrink: 0;
 }
 
 .our-team-title {
@@ -260,14 +258,13 @@ img{
     line-height: 1.11; /* 40/36 */
     letter-spacing: 0.02em; /* 0.72/36 */
     text-transform: capitalize;
-    padding-top: 120px;
     margin-bottom: 72px;
 
 }
 
 .our-team-list {
     display: flex;
-    flex-basis: calc((100% - 72px) / 4);
+    
     gap: 24px;
    
 }
@@ -282,7 +279,7 @@ img{
     display: inline-block;
     margin: 24px;
     border-radius: 0px 0px 4px 4px;
-
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .our-team-name {
@@ -335,7 +332,6 @@ img{
     line-height: 1.11; /* 40/36 */
     letter-spacing: 0.02em; /* 0.72/36 */
     text-transform: capitalize; 
-    padding-top: 120px;
     margin-bottom: 72px;
 }
 
