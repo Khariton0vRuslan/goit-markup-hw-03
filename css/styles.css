@@ -47,6 +47,7 @@ a {
 .header{
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container{
@@ -69,6 +70,7 @@ a {
     line-height: 1.17; /* 21/18 */
     letter-spacing: 0.03em; /* 0.54/18 */
     text-transform: uppercase;
+    margin-right: 76px;
 
 }
 .menu-name{
@@ -87,7 +89,7 @@ a {
     line-height: 1.14;
     letter-spacing: -0.02em; /* 0.32/16 */
     display: flex;
-    gap: 24px;
+    gap: 40px;
     
 }
 
@@ -97,6 +99,7 @@ a {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 .header-menu-link{
     color: #2e2f42;
@@ -138,6 +141,8 @@ a {
    /* ==========SECTION HERO===========*/
 .hero {
     background: var(--NAVY-BLUE, #2E2F42);
+    padding: 188px 0;
+
 }
 .hero-container{
    display: flex;
@@ -177,6 +182,7 @@ a {
     width: 169px;
     height: 56px;
     border: #404BBF;
+    min-width: 169px;
     
 }
 
@@ -188,6 +194,7 @@ a {
 
 .my-content {
     background: #fff;
+    padding: 120px 0 ;
 }
 
 .my-content-container{
@@ -195,6 +202,7 @@ a {
     height: 344px;
     
 }
+.visually-hidden
 
 .my-content-list{
     height: 104px;
@@ -213,7 +221,7 @@ a {
     margin-right: 24px;
     justify-content: space-around;
     align-items: center;
-    width: calc((100% - 72px) /4 )
+    width: calc((100%-72px)/4)
 }
 
 .my-content-subtitle {
@@ -239,6 +247,7 @@ a {
 
 .our-team {
     background: var(--CLOUD, #F4F4FD);
+    padding: 120px 0;
 
 }
 .out-team-container{
@@ -256,21 +265,28 @@ a {
     letter-spacing: 0.02em; /* 0.72/36 */
     text-transform: capitalize;
     padding-top: 120px;
+    margin-bottom: 72px;
 
 }
 
 .our-team-list {
     display: flex;
-    width: calc((100% - 72px) /4 ) ;
-    padding-top: 72px;
-    padding-bottom: 120px;
+    width: calc((100%-72px)/4) ;
+    gap: 24px;
+    border-radius: 0px 0px 4px 4px;
     
+}
+
+.our-team-itemdiv{
+    padding-top: 32px ;
+    padding-bottom: 32px;
 }
 
 .our-team-item {
     background-color: #FFFFFF;
     display: inline-block;
     margin: 24px;
+
 
 }
 
@@ -285,6 +301,7 @@ a {
     display: flex;
     flex-direction: column;
     padding-top: 32px;
+    margin-bottom: 8px;
 }
 
 .our-team-text {
@@ -297,7 +314,6 @@ a {
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 8px;
     padding-bottom: 32px;
 }
 
@@ -305,6 +321,8 @@ a {
 
 .portfolio {
     background: #FFF;
+    padding-top: 120px ;
+    padding-bottom: 120px;
 }
 
 .portfolio-container{
@@ -323,7 +341,7 @@ a {
     letter-spacing: 0.02em; /* 0.72/36 */
     text-transform: capitalize; 
     padding-top: 120px;
-    padding-bottom: 71px;
+    margin-bottom: 71px;
 }
 
 .portfolio-list {
@@ -331,14 +349,20 @@ a {
     flex-wrap: wrap;
     justify-content: space-around; 
     padding-bottom: 120px;
-
+    row-gap: 24px;
+    column-gap: 48px;
 }
 
 .portfolio-item {    
-    row-gap: 24px;
-    column-gap: 48px;
     flex-basis: calc((100% - 48px) / 3);
     margin-bottom: 48px;
+}
+
+.portfolio-div-element{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px ;
 }
 
 .portfolio-subtitle {
@@ -347,7 +371,6 @@ a {
     font-weight: 500;
     line-height: 1.2; /* 24/20 */
     letter-spacing: 0.02em; /* 0.4/20 */
-    padding-top: 32px;
 }
 
 .portfolio-text {
@@ -356,8 +379,6 @@ a {
     line-height: 1.5; /* 24/16 */
     letter-spacing: 0.02em; /* 0.32/16 */
     padding-top: 8px;
-    padding-bottom: 32px;
-    
 }
 
 /* ==========FOOTER===========*/
@@ -367,12 +388,12 @@ a {
     width: 1440px;
     height: 312px;
     flex-shrink: 0;
+    padding: 100px 0;
 }
 
 .container-footer{
     display: block;
-    padding-top: 101.5px ;
-    padding-bottom: 100px;
+
 }
 
 .footer-link{
@@ -384,6 +405,8 @@ a {
     line-height: 1.17; /* 21/18 */
     letter-spacing: 0.03em; /* 0.54/18 */
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
     
 }
 
@@ -395,7 +418,6 @@ a {
     line-height: 1.17; /* 21/18 */
     letter-spacing: 0.03em; /* 0.54/18 */
     text-transform: uppercase;
-    padding-bottom: 9,5px;
 }
 
 .footer-text{ 
@@ -404,5 +426,4 @@ a {
     font-size: 16px;
     line-height: 1.5; /* 24/16 */
     letter-spacing: 0.02em; /* 0.32/16 */
-    padding-top: 8px;
 }
