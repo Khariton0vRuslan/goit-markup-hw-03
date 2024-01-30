@@ -39,6 +39,12 @@ img{
 }
 
 .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -94,16 +100,17 @@ img{
 }
 
 .header-menu-item{
+    
+}
+
+.header-menu-link{
     color: var(--NAVY-BLUE, #2E2F42);
     font-size: 16px; 
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
-}
-.header-menu-link{
-    color: #2e2f42;
-    
+    display: block;
 }
 
 .header-menu-link:hover {
@@ -130,11 +137,13 @@ img{
     letter-spacing: -0.02em;
     display: flex;
     gap: 40px;
-    padding: 24px 0 
+    
 }
 .address-link{
     letter-spacing: 0.02em;
     color: #434455;
+    padding: 24px 0 ; 
+    display: block;
 }
 
 .address-link:hover , .address-link:focus{
@@ -145,7 +154,7 @@ img{
     background: var(--NAVY-BLUE, #2E2F42);
     padding: 188px 0;
     width: 1440px;
-    height: 600px;
+    margin: 0 auto;
 }
 
 .hero-container{
@@ -202,9 +211,6 @@ img{
     
 }
 .my-content-list{
-    height: 104px;
-    padding-top: 120px;
-    padding-bottom: 120px;
     display: flex;
     gap: 24px;
 }
@@ -215,7 +221,6 @@ img{
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    margin-right: 24px;
     justify-content: space-around;
     align-items: center;
     width: calc((100% - 72px) / 4);
@@ -277,7 +282,6 @@ img{
 .our-team-item {
     background-color: #FFFFFF;
     display: inline-block;
-    margin: 24px;
     border-radius: 0px 0px 4px 4px;
     flex-basis: calc((100% - 72px) / 4);
 }
@@ -292,7 +296,7 @@ img{
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-top: 32px;
+
     margin-bottom: 8px;
 }
 
@@ -306,7 +310,6 @@ img{
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-bottom: 32px;
 }
 
 /* ==========SECTION PORTFOLIO===========*/
@@ -376,8 +379,6 @@ img{
 
 .footer-part{
     background: var(--NAVY-BLUE, #2E2F42);
-    width: 1440px;
-    height: 312px;
     flex-shrink: 0;
     padding: 100px 0;
 }
